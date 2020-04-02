@@ -17,7 +17,7 @@ var userWord = prompt('Inserisci una ed una sola parola:');
 while(!isNaN(userWord)) {
     userWord = prompt('Ho detto inserisci una ed una sola PAROLA:');
 } 
-if(checkPalindromo(userWord)) {
+if(checkPalindrome(userWord)) {
     console.log('La parola ' + userWord + ' è palindroma. Cogratulazioni!');    
 } else {
     console.log('Se pensi che la parola ' + userWord + ' sia palindroma, allora chiamiamo subito il CENTODICIOTTO');    
@@ -26,7 +26,7 @@ if(checkPalindromo(userWord)) {
 
 /** Functions **/
 
-function checkPalindromo (word) {
+function checkPalindrome (word) {
     var reversed = '';
     for ( i = word.length-1 ; i>=0 ; i-- ) {
         reversed += word[i];
